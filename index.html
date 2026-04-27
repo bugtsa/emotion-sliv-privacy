@@ -1,95 +1,198 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Freud — Политика конфиденциальности</title>
+    <title>Emotion Sliv Privacy Policy</title>
     <style>
       :root { color-scheme: light dark; }
-      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; margin: 24px; }
-      main { max-width: 900px; }
-      code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; margin: 24px; }
+      main { max-width: 920px; }
       h1, h2 { line-height: 1.2; }
       ul { padding-left: 20px; }
+      code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
       .muted { opacity: 0.8; }
+      .lang-block { border-top: 2px solid #ddd; margin-top: 3em; padding-top: 2em; }
+      a { color: #1a73e8; }
     </style>
   </head>
   <body>
     <main>
-      <h1>Политика конфиденциальности</h1>
-
-      <p><strong>Приложение:</strong> Freud</p>
+      <h1>Privacy Policy</h1>
+      <p><strong>App name:</strong> Emotion Sliv</p>
       <p><strong>Package name:</strong> <code>com.psygalaxyon.freud</code></p>
-      <p class="muted"><strong>Последнее обновление:</strong> 20 апреля 2026</p>
+      <p><strong>Developer:</strong> Buga</p>
+      <p><strong>Contact email:</strong> <a href="mailto:bugtsa@gmail.com">bugtsa@gmail.com</a></p>
+      <p class="muted"><strong>Last updated:</strong> April 27, 2026</p>
 
-      <h2>Кратко</h2>
+      <h2>Overview</h2>
       <p>
-        Это приложение позволяет записывать и прослушивать аудио на устройстве. Для работы записи требуется доступ к микрофону.
-        Приложение также может отправлять диагностические данные (краши) и агрегированную аналитику для улучшения стабильности
-        и качества продукта.
+        Emotion Sliv is an Android voice recorder app. The app records audio only when the user starts recording,
+        stores recordings on the device, and may use network services for analytics, crash diagnostics, remote
+        configuration, and user-initiated sharing.
       </p>
 
-      <h2>Какие данные могут обрабатываться</h2>
+      <h2>Data categories that may be processed</h2>
       <ul>
-        <li>
-          <strong>Аудиозаписи</strong> — если вы запускаете запись, приложение получает доступ к микрофону и сохраняет созданные
-          записи на вашем устройстве.
-        </li>
-        <li>
-          <strong>Технические данные и диагностика</strong> — сведения о сбоях/ошибках и базовая техническая информация
-          (например, модель устройства, версия ОС) для анализа и устранения проблем.
-        </li>
-        <li>
-          <strong>Агрегированная аналитика использования</strong> — события о том, как используются функции приложения.
-        </li>
-        <li>
-          <strong>Конфигурация приложения</strong> — приложение может получать удалённые параметры/флаги (например, через Remote Config),
-          чтобы включать/выключать функции или менять поведение без обновления.
-        </li>
+        <li><strong>Audio or voice recordings</strong> when the user records sound with the microphone.</li>
+        <li><strong>App activity and analytics events</strong> through Firebase Analytics.</li>
+        <li><strong>Crash diagnostics and technical information</strong> through Firebase Crashlytics.</li>
+        <li><strong>Remote configuration data</strong> through Firebase Remote Config.</li>
+        <li><strong>User-initiated shared files</strong> when the user explicitly sends a recording to Telegram.</li>
       </ul>
 
-      <h2>Как используются данные</h2>
+      <h2>How the data is used</h2>
       <ul>
-        <li>Для предоставления функций приложения (запись и воспроизведение аудио, управление файлами, настройки).</li>
-        <li>Для повышения стабильности и качества (диагностика сбоев, улучшение производительности).</li>
-        <li>Для принятия продуктовых решений (обобщённая аналитика использования).</li>
+        <li>To provide core app functionality such as recording, playback, file management, and settings.</li>
+        <li>To understand feature usage and improve the product through analytics.</li>
+        <li>To detect crashes, diagnose failures, and improve stability.</li>
+        <li>To enable or adjust app behavior through remote configuration.</li>
+        <li>To complete sharing actions explicitly requested by the user.</li>
       </ul>
 
-      <h2>Передача данных третьим лицам</h2>
+      <h2>Third-party services</h2>
       <p>
-        Приложение может использовать сторонние сервисы для диагностики, аналитики и конфигурации (например, продукты Firebase).
-        Данные могут передаваться таким сервисам в объёме, необходимом для их работы.
-      </p>
-      <p>
-        Если вы явно инициируете действие «поделиться» (например, отправить запись в Telegram), приложение передаст выбранный вами файл
-        в соответствующее стороннее приложение/сервис в рамках вашего запроса.
+        The app may send limited data to Firebase Analytics, Firebase Crashlytics, and Firebase Remote Config.
+        If the user shares a recording to Telegram, the selected file is transferred to Telegram only as part of
+        the user-requested action.
       </p>
 
-      <h2>Разрешения</h2>
+      <h2>Permissions</h2>
       <ul>
-        <li>
-          <strong>Микрофон / запись аудио</strong> (<code>android.permission.RECORD_AUDIO</code>) — используется только когда вы запускаете запись.
-        </li>
+        <li><strong>Microphone</strong> (<code>android.permission.RECORD_AUDIO</code>) to record audio.</li>
+        <li><strong>Internet</strong> (<code>android.permission.INTERNET</code>) for analytics, diagnostics, remote config, and sharing.</li>
+        <li><strong>Media audio access</strong> (<code>android.permission.READ_MEDIA_AUDIO</code>) or legacy storage access to work with saved audio files on supported Android versions.</li>
       </ul>
 
-      <h2>Хранение и удаление</h2>
+      <h2>Retention and control</h2>
       <ul>
-        <li>Аудиозаписи хранятся на вашем устройстве до тех пор, пока вы их не удалите.</li>
-        <li>Срок хранения диагностических/аналитических данных зависит от настроек используемых сервисов.</li>
+        <li>Audio recordings remain on the device until the user deletes them.</li>
+        <li>Analytics, diagnostics, and remote config retention depend on the respective Firebase service settings.</li>
+        <li>The user can remove recordings, revoke permissions in Android settings, or uninstall the app.</li>
       </ul>
 
-      <h2>Ваш выбор и контроль</h2>
-      <ul>
-        <li>Вы можете удалять записи в приложении или удалив данные приложения в настройках Android.</li>
-        <li>Вы можете запретить доступ к микрофону в настройках Android (в этом случае запись работать не будет).</li>
-        <li>Вы можете удалить приложение, чтобы прекратить дальнейшую обработку данных приложением.</li>
-      </ul>
-
-      <h2>Контакты</h2>
+      <h2>Contact</h2>
       <p>
-        По вопросам конфиденциальности используйте контактные данные разработчика, указанные в карточке приложения в Google Play.
+        For privacy questions, contact Buga at <a href="mailto:bugtsa@gmail.com">bugtsa@gmail.com</a>.
       </p>
+
+      <div class="lang-block">
+        <h1>Политика конфиденциальности</h1>
+        <p><strong>Название приложения:</strong> Emotion Sliv</p>
+        <p><strong>Имя пакета:</strong> <code>com.psygalaxyon.freud</code></p>
+        <p><strong>Разработчик:</strong> Buga</p>
+        <p><strong>Контактный email:</strong> <a href="mailto:bugtsa@gmail.com">bugtsa@gmail.com</a></p>
+        <p class="muted"><strong>Последнее обновление:</strong> 27 апреля 2026</p>
+
+        <h2>Общая информация</h2>
+        <p>
+          Emotion Sliv — это Android-приложение для записи голоса. Приложение записывает аудио только когда пользователь
+          сам запускает запись, хранит записи на устройстве и может использовать сетевые сервисы для аналитики,
+          диагностики сбоев, удалённой конфигурации и действий «поделиться», инициированных пользователем.
+        </p>
+
+        <h2>Какие категории данных могут обрабатываться</h2>
+        <ul>
+          <li><strong>Аудио- или голосовые записи</strong> при записи звука с микрофона.</li>
+          <li><strong>События активности в приложении и аналитика</strong> через Firebase Analytics.</li>
+          <li><strong>Диагностика сбоев и техническая информация</strong> через Firebase Crashlytics.</li>
+          <li><strong>Данные удалённой конфигурации</strong> через Firebase Remote Config.</li>
+          <li><strong>Файлы, отправленные по инициативе пользователя</strong> при явной отправке записи в Telegram.</li>
+        </ul>
+
+        <h2>Как используются данные</h2>
+        <ul>
+          <li>Для работы основных функций приложения: запись, воспроизведение, управление файлами и настройки.</li>
+          <li>Для понимания использования функций и улучшения продукта с помощью аналитики.</li>
+          <li>Для обнаружения сбоев, диагностики ошибок и повышения стабильности.</li>
+          <li>Для включения или настройки поведения приложения через удалённую конфигурацию.</li>
+          <li>Для выполнения действий «поделиться», которые явно запускает пользователь.</li>
+        </ul>
+
+        <h2>Сторонние сервисы</h2>
+        <p>
+          Приложение может отправлять ограниченный объём данных в Firebase Analytics, Firebase Crashlytics и
+          Firebase Remote Config. Если пользователь отправляет запись в Telegram, выбранный файл передаётся в
+          Telegram только в рамках действия, запрошенного пользователем.
+        </p>
+
+        <h2>Разрешения</h2>
+        <ul>
+          <li><strong>Микрофон</strong> (<code>android.permission.RECORD_AUDIO</code>) для записи аудио.</li>
+          <li><strong>Интернет</strong> (<code>android.permission.INTERNET</code>) для аналитики, диагностики, remote config и отправки.</li>
+          <li><strong>Доступ к аудиофайлам</strong> (<code>android.permission.READ_MEDIA_AUDIO</code>) либо legacy-доступ к хранилищу для работы с сохранёнными файлами на поддерживаемых версиях Android.</li>
+        </ul>
+
+        <h2>Хранение и контроль</h2>
+        <ul>
+          <li>Аудиозаписи хранятся на устройстве до тех пор, пока пользователь их не удалит.</li>
+          <li>Срок хранения аналитики, диагностики и remote config зависит от настроек соответствующих сервисов Firebase.</li>
+          <li>Пользователь может удалить записи, отозвать разрешения в настройках Android или удалить приложение.</li>
+        </ul>
+
+        <h2>Контакт</h2>
+        <p>
+          По вопросам конфиденциальности свяжитесь с Buga: <a href="mailto:bugtsa@gmail.com">bugtsa@gmail.com</a>.
+        </p>
+      </div>
+
+      <div class="lang-block">
+        <h1>隐私政策</h1>
+        <p><strong>应用名称：</strong>Emotion Sliv</p>
+        <p><strong>包名：</strong><code>com.psygalaxyon.freud</code></p>
+        <p><strong>开发者：</strong>Buga</p>
+        <p><strong>联系邮箱：</strong><a href="mailto:bugtsa@gmail.com">bugtsa@gmail.com</a></p>
+        <p class="muted"><strong>最后更新：</strong>2026年4月27日</p>
+
+        <h2>概述</h2>
+        <p>
+          Emotion Sliv 是一款 Android 录音应用。应用仅在用户主动开始录音时访问麦克风，录音文件保存在用户设备上。
+          应用还可能使用网络服务用于分析、崩溃诊断、远程配置以及用户主动发起的分享功能。
+        </p>
+
+        <h2>可能处理的数据类型</h2>
+        <ul>
+          <li><strong>音频或语音录音</strong>：当用户使用麦克风录音时产生。</li>
+          <li><strong>应用活动和分析事件</strong>：通过 Firebase Analytics 处理。</li>
+          <li><strong>崩溃诊断和技术信息</strong>：通过 Firebase Crashlytics 处理。</li>
+          <li><strong>远程配置数据</strong>：通过 Firebase Remote Config 处理。</li>
+          <li><strong>用户主动分享的文件</strong>：当用户明确将录音发送到 Telegram 时产生。</li>
+        </ul>
+
+        <h2>数据用途</h2>
+        <ul>
+          <li>提供录音、播放、文件管理和设置等核心功能。</li>
+          <li>通过分析了解功能使用情况并改进产品。</li>
+          <li>发现崩溃、诊断故障并提升稳定性。</li>
+          <li>通过远程配置启用或调整应用行为。</li>
+          <li>完成用户明确请求的分享操作。</li>
+        </ul>
+
+        <h2>第三方服务</h2>
+        <p>
+          应用可能会向 Firebase Analytics、Firebase Crashlytics 和 Firebase Remote Config 发送有限数据。
+          如果用户将录音分享至 Telegram，所选文件仅会在该用户请求的分享操作中传输给 Telegram。
+        </p>
+
+        <h2>权限</h2>
+        <ul>
+          <li><strong>麦克风</strong>（<code>android.permission.RECORD_AUDIO</code>）：用于录音。</li>
+          <li><strong>网络</strong>（<code>android.permission.INTERNET</code>）：用于分析、诊断、远程配置和分享。</li>
+          <li><strong>音频媒体访问</strong>（<code>android.permission.READ_MEDIA_AUDIO</code>）或旧版存储权限：用于访问已保存的音频文件。</li>
+        </ul>
+
+        <h2>保存期限与用户控制</h2>
+        <ul>
+          <li>录音文件会保存在用户设备上，直到用户主动删除。</li>
+          <li>分析、诊断和远程配置数据的保存期限取决于相应 Firebase 服务的设置。</li>
+          <li>用户可以删除录音、在 Android 设置中撤销权限，或卸载应用。</li>
+        </ul>
+
+        <h2>联系方式</h2>
+        <p>
+          如有隐私问题，请联系 Buga：<a href="mailto:bugtsa@gmail.com">bugtsa@gmail.com</a>。
+        </p>
+      </div>
     </main>
   </body>
 </html>
-
